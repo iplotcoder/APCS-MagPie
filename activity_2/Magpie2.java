@@ -43,6 +43,25 @@ public class Magpie2
 		{
 			response = "Tell me more about your family.";
 		}
+		else if (statement.indexOf("football") >= 0
+				|| statement.indexOf("basketball") >= 0
+				|| statement.indexOf("soccer") >= 0
+				|| statement.indexOf("baseball") >= 0)
+		{
+			response = "Do you play sports?";
+		}
+		else if (statement.trim().length() == 0)
+		{
+			response = "Say something please";
+		}
+		else if (statement.indexOf("hello") >= 0)
+		{
+			response = "hello, what is your name?";
+		}
+		if (statement.indexOf("isaac") >= 0)
+		{
+			response = "I heard Isaac is a cool guy.";
+		}
 		else
 		{
 			response = getRandomResponse();
